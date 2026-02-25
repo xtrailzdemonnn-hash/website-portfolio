@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import react from '@vitejs/plugin-react' // (Ini contoh jika pakai React, biarkan sesuai bawaan Anda)
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()],
+  base: '/website-portfolio/', // <--- Tambahkan baris ini. Pastikan nama repo sama persis.
+  plugins: [react()],
 })
